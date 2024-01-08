@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 100px;
+            height: 10vh;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    
+<button id="'myButton">click me!</button>
+<p ID="click">click</p>
+<P ID="dblclick">DoubleClick</P>
+<p id="mousedown">mousedown</p>
+<p id="mouseup">mouseup</p>
+<p id="mousemove">mousemove</p>
+<p id="mouseenter">mouseenter</p>
+<p id="mouseleave">mouseleave</p>
+
+<script>
+    var click = document.getElementById('click');
+
+    click.addEventListener('click', function () {
+
+     console.log('click event tiggered.');   
+    } );
+
+    var dblclick = document.getElementById('dblclick');
+
+dblclick.addEventListener('dblclick', function () {
+
+ console.log('dblclick event tiggered.');   
+});
+
+var mousedown = document.getElementById('mousedown');
+
+mousedown.addEventListener('mousedown', function () {
+
+ console.log('mousedown event tiggered.');   
+} );
+
+var mouseup = document.getElementById('mouseup');
+
+mouseup.addEventListener('mouseup', function () {
+
+ console.log('mouseup event tiggered.');   
+} );
+
+var mousemove = document.getElementById('mousemove');
+
+mousemove.addEventListener('mousemove', function () {
+
+ console.log('mousemove event tiggered.');   
+} );
+
+var mouseenter = document.getElementById('mouseenter');
+
+mouseenter.addEventListener('mouseenter', function () {
+
+ console.log('mouseenter event tiggered.');   
+} );
+
+var mouseleave = document.getElementById('mouseleave');
+
+mouseleave.addEventListener('mouseleave', function () {
+
+ console.log('mouseleave event tiggered.');   
+} );
+
+
+</script>
+</body>
+</html>
