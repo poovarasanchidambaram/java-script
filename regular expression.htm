@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <script>
+        let sen="Poovarasan"
+        let a=/o/g 
+        console.log(sen.match(a));
+        console.log(a.test(sen));
+        console.log(sen.search(a));
+
+        let caps =/P/gi
+        let magic = 'welcome Poovarasan'
+        console.log(magic.search(caps));
+
+        let Honda = 'cbr 1000RR\n the super bike' 
+        console.log(Honda);
+        let more =/m/mgi;
+
+        let alfo = 'abcdefghijklmnopqrstuvwxyz';
+        let vowels = /[^aeiou]/g;
+        console.log (alfo.match(vowels));
+
+
+        let new1 ='Male 12  thala @ each 1500 vara mathri # soilu da machi male thala puppy quality is good so rate 14k vara pogalam'
+        let onlyspace =/\b/gi;
+        console.log(new1);
+        console.log(new1.match(onlyspace));
+
+        let name ='1poovarasan'
+        let check = /^[A-Z]/
+        console.log(check.test(name));
+
+        let mail = '.com'
+        let checke = /(.com)$/
+        console.log(check.test(mail));
+
+        let amount =' 1 10 222 444 6666'
+        let number =/\d{2,3}/g
+        console.log(amount.match(number));
+
+       
+    //  let gmail = 'poovarasanchidambaram@gmail.com' 41 [@](gmail|email)\.(com)$
+
+     let gmail ='POovara@gmail.com'
+    let checkmail =/^[A-Z]{2}[a-z0-9]{5,10}[@](gmail|email)\.(com)$/
+    console.log(checkmail.test(gmail));
+
+
+    </script>
+</body>
+</html>
